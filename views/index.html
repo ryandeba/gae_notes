@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href="/assets/css/bootstrap.min.css" rel="stylesheet/less" type="text/css">
-		<link href="/assets/css/bootstrap-theme.min.css" rel="stylesheet/less" type="text/css">
 		<script type="text/javascript" src="/assets/js/jquery.js"></script>
+
+		<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="/assets/js/underscore.js"></script>
+		<script type="text/javascript" src="/assets/js/backbone.js"></script>
+		<script type="text/javascript" src="/assets/js/backbone.marionette.js"></script>
+
+		<script type="text/javascript" src="assets/js/notes.js"></script>
 	</head>
-	<body>
+	<body style="padding-top: 70px;">
+		<header class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="/" class="navbar-brand">Notes</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#new">New</a></li>
+						<li><a href="#list">List</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#list">Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<div class="container">
+			<div id="main">
+
+				<div class="row">
+					<div class="col-xs-12">
+						<input type="text" class="form-control input-lg" placeholder="Title" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<textarea class="form-control input-lg"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 text-right">
+						<button type="button" class="btn btn-danger js-delete">Delete</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
 	</body>
 </html>
