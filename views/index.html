@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link href="/assets/favicon.ico" rel="icon" />
+		<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/css/animate.css" rel="stylesheet" type="text/css" />
+
 		<script type="text/javascript" src="/assets/js/jquery.js"></script>
-
-		<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
-
 		<script type="text/javascript" src="/assets/js/underscore.js"></script>
 		<script type="text/javascript" src="/assets/js/backbone.js"></script>
 		<script type="text/javascript" src="/assets/js/backbone.marionette.js"></script>
 
 		<script type="text/javascript" src="assets/js/notes.js"></script>
+		<script type="text/javascript" src="assets/js/note.js"></script>
 	</head>
 	<body style="padding-top: 70px;">
 		<header class="navbar navbar-default navbar-fixed-top">
@@ -20,8 +22,8 @@
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="#new">New</a></li>
 						<li><a href="#list">List</a></li>
+						<li><a href="#new">New</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#list">Login</a></li>
@@ -31,7 +33,38 @@
 		</header>
 
 		<div class="container">
-			<div id="main">
+			<div id="main"></div>
+			<hr />
+			<div id="prototypes">
+				<div class="row">
+					<div class="col-xs-12">
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								Note 1
+							</div>
+							<div class="panel-body">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis ac justo nec aliquam. Quisque sodales sapien sit amet placerat rhoncus. Suspendisse consequat libero ac quam eleifend varius. Mauris lorem erat, faucibus accumsan auctor vitae, ultrices dictum augue. Vivamus tempus ipsum a enim egestas venenatis. Pellentesque mauris magna, egestas at tempus vitae, fringilla ut augue. Nam nec suscipit mauris. Pellentesque quis rhoncus velit. Phasellus eget diam at lectus congue tempor. Integer ullamcorper, nibh in dignissim ultrices, est turpis vulputate dolor, et molestie dolor tortor sit amet purus. Pellentesque pellentesque vitae lacus bibendum mattis. Aenean hendrerit, augue id dictum pulvinar, justo erat vulputate ipsum, et interdum ipsum quam rutrum leo.
+								</p>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								Note 2
+							</div>
+							<div class="panel-body">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis ac justo nec aliquam. Quisque sodales sapien sit amet placerat rhoncus. Suspendisse consequat libero ac quam eleifend varius. Mauris lorem erat, faucibus accumsan auctor vitae, ultrices dictum augue. Vivamus tempus ipsum a enim egestas venenatis. Pellentesque mauris magna, egestas at tempus vitae, fringilla ut augue. Nam nec suscipit mauris. Pellentesque quis rhoncus velit. Phasellus eget diam at lectus congue tempor. Integer ullamcorper, nibh in dignissim ultrices, est turpis vulputate dolor, et molestie dolor tortor sit amet purus. Pellentesque pellentesque vitae lacus bibendum mattis. Aenean hendrerit, augue id dictum pulvinar, justo erat vulputate ipsum, et interdum ipsum quam rutrum leo.
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<hr />
 
 				<div class="row">
 					<div class="col-xs-12">
@@ -44,7 +77,10 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-12 text-right">
+					<div class="col-xs-6 ">
+						<button type="button" class="btn btn-primary js-back">Back to List</button>
+					</div>
+					<div class="col-xs-6 text-right">
 						<button type="button" class="btn btn-danger js-delete">Delete</button>
 					</div>
 				</div>

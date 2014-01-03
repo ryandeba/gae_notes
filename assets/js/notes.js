@@ -5,6 +5,9 @@ $(function(){
 		"main": "#main"
 	});
 
+	var notes;
+
 	Notes.on("initialize:after", function(){
+	 notes = new Notes.NoteCollection();
 	});
 });
